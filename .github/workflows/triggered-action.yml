@@ -1,0 +1,14 @@
+name: Triggered Workflow This is Backend
+
+on:
+  workflow_dispatch:
+
+jobs:
+  triggered-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Do something
+        run: echo "This workflow was triggered by Api Def!"
